@@ -17,7 +17,7 @@
 
     /* space*/
 
-    --grid-2col: repeat(auto-fit, minmax(340px, 1fr));
+    --grid-2col: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
 
 }
 
@@ -67,6 +67,9 @@ p {
 ul {
     list-style: none;
 }
+
+
+
 
 .big {
     font-size: 18px;
@@ -254,7 +257,7 @@ ul {
 .section2__block {
     display: flex;
     flex-direction: column;
-    gap: (var(--space-lg));
+    gap: var(--space-lg);
 }
 
 .nav__2 {
